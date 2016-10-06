@@ -26,9 +26,13 @@ namespace WebApiAngularJS.UX.WebAPI
                        "~/Scripts/App/Editora/Service.js",
                        "~/Scripts/App/Editora/Controller.js"));
 
+            bundles.Add(new ScriptBundle("~/bundles/app/livro").Include(
+           "~/Scripts/App/Livro/Service.js",
+           "~/Scripts/App/Livro/Controller.js"));
+
             bundles.Add(new ScriptBundle("~/bundles/angularjs").Include(
                       "~/Scripts/angular.js",
-                      "~/Scripts/App/Editora/Module.js"));
+                      "~/Scripts/App/Module.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/toastr").Include(
                        "~/Scripts/toastr.js"));

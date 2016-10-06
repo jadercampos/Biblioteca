@@ -1,0 +1,11 @@
+C:\Users\jader\Downloads\WebApi-AngularJS\WebApiAngularJS.Repositories\bin\Debug\WebApiAngularJS.Repositories.dll.config
+C:\Users\jader\Downloads\WebApi-AngularJS\WebApiAngularJS.Repositories\bin\Debug\WebApiAngularJS.Repositories.dll
+C:\Users\jader\Downloads\WebApi-AngularJS\WebApiAngularJS.Repositories\bin\Debug\WebApiAngularJS.Repositories.pdb
+C:\Users\jader\Downloads\WebApi-AngularJS\WebApiAngularJS.Repositories\bin\Debug\EntityFramework.dll
+C:\Users\jader\Downloads\WebApi-AngularJS\WebApiAngularJS.Repositories\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\jader\Downloads\WebApi-AngularJS\WebApiAngularJS.Repositories\bin\Debug\WebApiAngularJS.Domain.dll
+C:\Users\jader\Downloads\WebApi-AngularJS\WebApiAngularJS.Repositories\bin\Debug\WebApiAngularJS.Domain.pdb
+C:\Users\jader\Downloads\WebApi-AngularJS\WebApiAngularJS.Repositories\bin\Debug\EntityFramework.xml
+C:\Users\jader\Downloads\WebApi-AngularJS\WebApiAngularJS.Repositories\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\jader\Downloads\WebApi-AngularJS\WebApiAngularJS.Repositories\obj\Debug\WebApiAngularJS.Repositories.dll
+C:\Users\jader\Downloads\WebApi-AngularJS\WebApiAngularJS.Repositories\obj\Debug\WebApiAngularJS.Repositories.pdb

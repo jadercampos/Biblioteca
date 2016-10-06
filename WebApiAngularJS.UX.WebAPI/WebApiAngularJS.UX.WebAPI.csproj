@@ -166,7 +166,9 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="Controllers\API\LivroController.cs" />
     <Compile Include="Controllers\API\EditoraController.cs" />
+    <Compile Include="Controllers\LivroController.cs" />
     <Compile Include="Controllers\EditoraController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
@@ -209,8 +211,10 @@
     <Content Include="Scripts\angular.js" />
     <Content Include="Scripts\angular.min.js" />
     <Content Include="Scripts\App\Editora\Controller.js" />
-    <Content Include="Scripts\App\Editora\Module.js" />
+    <Content Include="Scripts\App\Module.js" />
     <Content Include="Scripts\App\Editora\Service.js" />
+    <Content Include="Scripts\App\Livro\Controller.js" />
+    <Content Include="Scripts\App\Livro\Service.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Areas\HelpPage\Views\Web.config" />
@@ -1016,6 +1020,7 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Scripts\version.json" />
     <Content Include="Views\Editora\Index.cshtml" />
+    <Content Include="Views\Livro\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\WebApiAngularJS.Domain\WebApiAngularJS.Domain.csproj">
