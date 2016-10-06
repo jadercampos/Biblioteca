@@ -1,14 +1,14 @@
 ﻿app.controller("livroCtrl", function ($scope, livroService) {
-
     $scope.divLivro = false;
 
     ListarTodos();
+    ListarIdiomas();
     $scope.Salvar = function () {
         debugger;
         var livro = {
             Id: $scope.livro.Id,
             Nome: $scope.livro.Nome,
-            Descricao: $scope.livro.Descricao
+            Idioma: $scope.livro.Idioma
         };
         $scope.divLivro = true;
         if ($scope.Action == "Atualizar") {
@@ -82,6 +82,18 @@
 
         }, function () {
             toastr["error"]("Erro ao obter Livros!", "WebApiAngularJS");
+        });
+
+    }
+    function ListarIdiomas() {
+
+        var idiomasData = livroService.ListarIdiomas();
+
+        idiomasData.then(function (idioma) {
+            $scope.idiomas = idioma.data;
+
+        }, function () {
+            toastr["error"]("Erro ao obter Idiomas!", "WebApiAngularJS");
         });
 
     }

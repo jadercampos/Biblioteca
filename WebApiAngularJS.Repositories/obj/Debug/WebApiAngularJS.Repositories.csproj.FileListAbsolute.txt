@@ -9,3 +9,4 @@ C:\Users\jader\Downloads\WebApi-AngularJS\WebApiAngularJS.Repositories\bin\Debug
 C:\Users\jader\Downloads\WebApi-AngularJS\WebApiAngularJS.Repositories\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\jader\Downloads\WebApi-AngularJS\WebApiAngularJS.Repositories\obj\Debug\WebApiAngularJS.Repositories.dll
 C:\Users\jader\Downloads\WebApi-AngularJS\WebApiAngularJS.Repositories\obj\Debug\WebApiAngularJS.Repositories.pdb
+C:\Users\jader\Downloads\WebApi-AngularJS\WebApiAngularJS.Repositories\obj\Debug\WebApiAngularJS.Repositories.csprojResolveAssemblyReference.cache

@@ -34,6 +34,7 @@
     <Compile Include="Entities\Editora.cs" />
     <Compile Include="Entities\Livro.cs" />
     <Compile Include="Enums\Capa.cs" />
+    <Compile Include="Enums\EnumHelper.cs" />
     <Compile Include="Enums\Idioma.cs" />
     <Compile Include="Interfaces\IEditoraRepository.cs" />
     <Compile Include="Interfaces\ILivroRepository.cs" />

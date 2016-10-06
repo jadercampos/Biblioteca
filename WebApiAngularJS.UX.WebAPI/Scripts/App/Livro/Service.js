@@ -3,7 +3,9 @@
     this.ListarTodos = function () {
         return $http.get("/api/Livro/ListarTodos/");
     }
-
+    this.ListarIdiomas = function () {
+        return $http.get("api/Idioma/ListarNomes/");
+    }
 
     this.RetornarPorId = function (id) {
         return $http.get("/api/Livro/RetornarPorId/" + JSON.stringify(id));

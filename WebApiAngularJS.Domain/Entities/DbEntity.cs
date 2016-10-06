@@ -15,6 +15,8 @@ namespace WebApiAngularJS.Domain.Entities
         public DateTime DtInc { get; set; }
 
         [DataType(DataType.DateTime)]
+
         public DateTime? DtAlt { get; set; }
+
     }
 }
