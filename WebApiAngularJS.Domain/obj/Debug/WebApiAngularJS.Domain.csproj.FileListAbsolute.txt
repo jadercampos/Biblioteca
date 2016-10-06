@@ -1,0 +1,14 @@
+D:\Projetos\DotNet\3-WebApiAngularJS\WebApiAngularJS.Domain\bin\Debug\WebApiAngularJS.Domain.dll
+D:\Projetos\DotNet\3-WebApiAngularJS\WebApiAngularJS.Domain\bin\Debug\WebApiAngularJS.Domain.pdb
+D:\Projetos\DotNet\3-WebApiAngularJS\WebApiAngularJS.Domain\obj\Debug\WebApiAngularJS.Domain.csprojResolveAssemblyReference.cache
+D:\Projetos\DotNet\3-WebApiAngularJS\WebApiAngularJS.Domain\obj\Debug\WebApiAngularJS.Domain.dll
+D:\Projetos\DotNet\3-WebApiAngularJS\WebApiAngularJS.Domain\obj\Debug\WebApiAngularJS.Domain.pdb
+C:\Users\jader\Downloads\WebApi-AngularJS-master\WebApiAngularJS.Domain\bin\Debug\WebApiAngularJS.Domain.dll
+C:\Users\jader\Downloads\WebApi-AngularJS-master\WebApiAngularJS.Domain\bin\Debug\WebApiAngularJS.Domain.pdb
+C:\Users\jader\Downloads\WebApi-AngularJS-master\WebApiAngularJS.Domain\obj\Debug\WebApiAngularJS.Domain.dll
+C:\Users\jader\Downloads\WebApi-AngularJS-master\WebApiAngularJS.Domain\obj\Debug\WebApiAngularJS.Domain.pdb
+C:\Users\jader\Downloads\WebApi-AngularJS-master\WebApiAngularJS.Domain\bin\Debug\WebApiAngularJS.Domain.dll.config
+C:\Users\jader\Downloads\WebApi-AngularJS-master\WebApiAngularJS.Domain\bin\Debug\EntityFramework.dll
+C:\Users\jader\Downloads\WebApi-AngularJS-master\WebApiAngularJS.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\jader\Downloads\WebApi-AngularJS-master\WebApiAngularJS.Domain\bin\Debug\EntityFramework.xml
+C:\Users\jader\Downloads\WebApi-AngularJS-master\WebApiAngularJS.Domain\bin\Debug\EntityFramework.SqlServer.xml

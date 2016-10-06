@@ -1,0 +1,5 @@
+D:\Google Drive\PROJETOS\DotNet\7 - WebApi [AngularJS]\WebApiAngularJS.Domain\bin\Release\WebApiAngularJS.Domain.dll
+D:\Google Drive\PROJETOS\DotNet\7 - WebApi [AngularJS]\WebApiAngularJS.Domain\bin\Release\WebApiAngularJS.Domain.pdb
+D:\Google Drive\PROJETOS\DotNet\7 - WebApi [AngularJS]\WebApiAngularJS.Domain\obj\Release\WebApiAngularJS.Domain.csprojResolveAssemblyReference.cache
+D:\Google Drive\PROJETOS\DotNet\7 - WebApi [AngularJS]\WebApiAngularJS.Domain\obj\Release\WebApiAngularJS.Domain.dll
+D:\Google Drive\PROJETOS\DotNet\7 - WebApi [AngularJS]\WebApiAngularJS.Domain\obj\Release\WebApiAngularJS.Domain.pdb

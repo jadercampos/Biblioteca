@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiAngularJS.Domain", "WebApiAngularJS.Domain\WebApiAngularJS.Domain.csproj", "{536D62E4-6B80-4C31-A1A6-ED4634A79ADA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiAngularJS.Repositories", "WebApiAngularJS.Repositories\WebApiAngularJS.Repositories.csproj", "{2B5EADEE-33EE-40FD-9711-3085B8CDAE16}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra", "Infra", "{87E7DBBA-4248-4656-AE42-370CD9D35DA9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UX", "UX", "{3C64A7F4-CB08-47D3-AE04-5843DC5D1D16}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiAngularJS.UX.WebAPI", "WebApiAngularJS.UX.WebAPI\WebApiAngularJS.UX.WebAPI.csproj", "{96071E29-EFF5-4BF3-AC6A-F50035BF148E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{536D62E4-6B80-4C31-A1A6-ED4634A79ADA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{536D62E4-6B80-4C31-A1A6-ED4634A79ADA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{536D62E4-6B80-4C31-A1A6-ED4634A79ADA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{536D62E4-6B80-4C31-A1A6-ED4634A79ADA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B5EADEE-33EE-40FD-9711-3085B8CDAE16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B5EADEE-33EE-40FD-9711-3085B8CDAE16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B5EADEE-33EE-40FD-9711-3085B8CDAE16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B5EADEE-33EE-40FD-9711-3085B8CDAE16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96071E29-EFF5-4BF3-AC6A-F50035BF148E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96071E29-EFF5-4BF3-AC6A-F50035BF148E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96071E29-EFF5-4BF3-AC6A-F50035BF148E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96071E29-EFF5-4BF3-AC6A-F50035BF148E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{536D62E4-6B80-4C31-A1A6-ED4634A79ADA} = {87E7DBBA-4248-4656-AE42-370CD9D35DA9}
+		{2B5EADEE-33EE-40FD-9711-3085B8CDAE16} = {87E7DBBA-4248-4656-AE42-370CD9D35DA9}
+		{96071E29-EFF5-4BF3-AC6A-F50035BF148E} = {3C64A7F4-CB08-47D3-AE04-5843DC5D1D16}
+	EndGlobalSection
+EndGlobal

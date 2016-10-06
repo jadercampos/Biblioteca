@@ -1,0 +1,5 @@
+D:\Projetos\DotNet\WebApiAngularJS\WebApiAngularJS.Domain\bin\Release\WebApiAngularJS.Domain.dll
+D:\Projetos\DotNet\WebApiAngularJS\WebApiAngularJS.Domain\bin\Release\WebApiAngularJS.Domain.pdb
+D:\Projetos\DotNet\WebApiAngularJS\WebApiAngularJS.Domain\obj\Release\WebApiAngularJS.Domain.dll
+D:\Projetos\DotNet\WebApiAngularJS\WebApiAngularJS.Domain\obj\Release\WebApiAngularJS.Domain.pdb
+D:\Projetos\DotNet\WebApiAngularJS\WebApiAngularJS.Domain\obj\Release\WebApiAngularJS.Domain.csprojResolveAssemblyReference.cache

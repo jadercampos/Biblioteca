@@ -1,0 +1,56 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Estabelecimentos</h2>
+<div ng-controller="estabelecimentoCtrl">
+    <div class="divList">
+        <table class="table table-hover table-striped">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Nome</th>
+                    <th>Descrição</th>
+                    <th colspan="2">Opções</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="estabelecimento in estabelecimentos">
+                    <td>{{estabelecimento.Id}}</td>
+                    <td>{{estabelecimento.Nome}}</td>
+                    <td>{{estabelecimento.Descricao}}</td>
+                    <td><span class="btn btn-success btn-xs" ng-click="RetornarPorId(estabelecimento)"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>&nbsp;Editar</span></td>
+                    <td><span class="btn btn-danger btn-xs" ng-click="Excluir(estabelecimento)"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span>&nbsp;Excluir</span></td>
+                </tr>
+            </tbody>
+        </table>
+        <span class="btn btn-primary btn-xl" ng-click="Novo()"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>&nbsp;Novo Estabelecimento</span>
+        <div ng-show="divEstabelecimento">
+            <p class="divHead"></p>
+            <table class="table">
+                <tr>
+                    <td colspan="3"><b><i>{{Action}} Estabelecimento</i></b></td>
+                </tr>
+                <tr>
+                    <td>Id:</td>
+                   <td><input type="text" readonly="readonly" ng-model="estabelecimento.Id"/></td>
+                </tr>
+                <tr>
+                    <td>Nome:</td>
+                    <td><input type="text"  ng-model="estabelecimento.Nome"/></td>
+                </tr>
+                <tr>
+                    <td>Descrição:</td>
+                    <td><input type="text" class="disabled" ng-model="estabelecimento.Descricao"/></td>
+                </tr>
+            </table>
+            <span class="btn btn-success btn-xl" ng-click="Salvar()"><span class="glyphicon glyphicon-save" aria-hidden="true"></span>&nbsp;Salvar</span>
+            <span class="btn btn-danger btn-xl" ng-click="Cancelar()"><span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>&nbsp;Cancelar</span>
+        </div>
+    </div>
+</div>
+@section Scripts {
+    @Scripts.Render("~/bundles/app/estabelecimento");
+}
