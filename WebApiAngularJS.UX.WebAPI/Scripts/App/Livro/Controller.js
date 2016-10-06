@@ -4,14 +4,18 @@
     ListarTodos();
     ListarIdiomas();
     ListarCapas();
+    ListarEditoras();
     $scope.Salvar = function () {
         debugger;
         var livro = {
             Id: $scope.livro.Id,
+            Editora: $scope.livro.Editora,
             Nome: $scope.livro.Nome,
             Idioma: $scope.livro.Idioma,
             Capa: $scope.livro.Capa,
-            Paginas: $scope.livro.Paginas
+            Paginas: $scope.livro.Paginas,
+            DtInc: $scope.livro.DtInc,
+            DtAlt: $scope.livro.DtAlt
         };
         $scope.divLivro = true;
         if ($scope.Action == "Atualizar") {
@@ -44,10 +48,13 @@
         livroData.then(function (_livro) {
             $scope.livro = _livro.data;
             $scope.Id = _livro.Id;
+            $scope.Editora = _livro.Editora;
             $scope.Nome = _livro.Nome;
             $scope.Idioma = _livro.Idioma;
             $scope.Capa = _livro.Capa;
             $scope.Paginas = _livro.Paginas;
+            $scope.DtInc = _livro.DtInc;
+            $scope.DtInc = _livro.DtAlt;
             $scope.Action = "Atualizar";
             $scope.divLivro = true;
         }, function () {
@@ -74,11 +81,16 @@
         $scope.divLivro = true;
     }
     function LimpaCampos() {
-        $scope.Id = "";
-        $scope.Nome = "";
-        //$scope.Idioma = "";
-        //$scope.Capa = "";
-        //$scope.Paginas = "";
+        if ($scope.livro) {
+            $scope.livro.Id = "";
+            $scope.livro.Editora = "";
+            $scope.livro.Nome = "";
+            $scope.livro.Idioma = "";
+            $scope.livro.Capa = "";
+            $scope.livro.Paginas = "";
+            $scope.livro.DtInc = "";
+            $scope.livro.DtAlt = "";
+        }
     }
     function ListarTodos() {
 
@@ -88,6 +100,17 @@
             $scope.livros = livro.data;
         }, function () {
             toastr["error"]("Erro ao obter Livros!", "WebApiAngularJS");
+        });
+
+    }
+    function ListarEditoras() {
+
+        var editoraData = livroService.ListarEditoras();
+
+        editoraData.then(function (editora) {
+            $scope.editoras = editora.data;
+        }, function () {
+            toastr["error"]("Erro ao obter Editoras!", "WebApiAngularJS");
         });
 
     }

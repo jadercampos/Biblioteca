@@ -43,6 +43,14 @@
                    <td><input type="text" readonly="readonly" ng-model="livro.Id"/></td>
                 </tr>
                 <tr>
+                    <td>Editora:</td>
+                    <td>
+                        <select ng-model="livro.Editora" ng-options="editora.Nome for editora in editoras track by editora.Id">
+                            <option value="">Selecione uma Editora</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
                     <td>Nome:</td>
                     <td><input type="text"  ng-model="livro.Nome"/></td>
                 </tr>
@@ -71,6 +79,8 @@
             <span class="btn btn-danger btn-xl" ng-click="Cancelar()"><span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>&nbsp;Cancelar</span>
         </div>
     </div>
+    <input type="hidden" ng-model="livro.DtInc" />
+    <input type="hidden" ng-model="livro.DtAlt" />
 </div>
 @section Scripts {
     @Scripts.Render("~/bundles/app/livro");

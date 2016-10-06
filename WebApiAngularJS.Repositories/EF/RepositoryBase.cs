@@ -1,13 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Data.Entity.Infrastructure;
+using System.Data.Entity.Validation;
+using System.Diagnostics;
 using System.Linq;
+using WebApiAngularJS.Domain.Entities;
 using WebApiAngularJS.Domain.Interfaces;
 using WebApiAngularJS.Repositories.EF;
 
 namespace WebApiAngularJS.Repositories
 {
-    public class RepositoryBase<TEntity> : IRepositoryBase<TEntity> where TEntity : class
+    public class RepositoryBase<TEntity> : IRepositoryBase<TEntity> where TEntity : DbEntity
     {
         protected AppDbContext Context { get; private set; }
 
@@ -17,11 +21,13 @@ namespace WebApiAngularJS.Repositories
         }
         public void Add(TEntity entity)
         {
+            entity.DtInc = DateTime.Now;
             Context.Set<TEntity>().Add(entity);
         }
 
         public void Update(TEntity entity)
         {
+            entity.DtAlt = DateTime.Now;
             Context.Entry(entity).State = EntityState.Modified;
         }
 
@@ -46,7 +52,27 @@ namespace WebApiAngularJS.Repositories
         }
         public void SaveChanges()
         {
-            Context.SaveChanges();
+            try
+            {
+                Context.SaveChanges();
+            }
+            catch (DbEntityValidationException dbEx)
+            {
+                foreach (var validationErrors in dbEx.EntityValidationErrors)
+                {
+                    foreach (var validationError in validationErrors.ValidationErrors)
+                    {
+                        Trace.TraceInformation("Property: {0} Error: {1}",
+                                                validationError.PropertyName,
+                                                validationError.ErrorMessage);
+                    }
+                }
+            }
+            catch (DbUpdateException dbEx)
+            {
+                Trace.TraceInformation(dbEx.Message);
+            }
+
         }
 
         public void Dispose()

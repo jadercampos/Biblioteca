@@ -38,7 +38,6 @@ namespace WebApiAngularJS.UX.WebAPI.Controllers.API
 
             using (repositorio = new LivroRepository())
             {
-                Livro.DtInc = DateTime.Now;
                 repositorio.Add(Livro);
                 repositorio.SaveChanges();
             }
@@ -52,7 +51,6 @@ namespace WebApiAngularJS.UX.WebAPI.Controllers.API
 
             using (repositorio = new LivroRepository())
             {
-                Livro.DtInc = DateTime.Now;
                 repositorio.Update(Livro);
                 repositorio.SaveChanges();
             }

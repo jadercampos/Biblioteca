@@ -38,7 +38,6 @@ namespace WebApiAngularJS.UX.WebAPI.Controllers.API
 
             using (repositorio = new EditoraRepository())
             {
-                Editora.DtInc = DateTime.Now;
                 repositorio.Add(Editora);
                 repositorio.SaveChanges();
             }
@@ -52,7 +51,6 @@ namespace WebApiAngularJS.UX.WebAPI.Controllers.API
 
             using (repositorio = new EditoraRepository())
             {
-                Editora.DtInc = DateTime.Now;
                 repositorio.Update(Editora);
                 repositorio.SaveChanges();
             }

@@ -10,7 +10,6 @@ namespace WebApiAngularJS.Repositories.EF.Map
         {
             HasKey(l => l.Id);
             Property(l => l.Nome).IsRequired().HasMaxLength(100);
-            //Property(e => e.Descricao).HasMaxLength(300);
         }
     }
 }

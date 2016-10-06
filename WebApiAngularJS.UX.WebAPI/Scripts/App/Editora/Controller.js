@@ -8,7 +8,8 @@
         var editora = {
             Id: $scope.editora.Id,
             Nome: $scope.editora.Nome,
-            Descricao: $scope.editora.Descricao
+            DtInc: $scope.editora.DtInc,
+            DtAlt: $scope.editora.DtAlt
         };
         $scope.divEditora = true;
         if ($scope.Action == "Atualizar") {
@@ -42,7 +43,8 @@
             $scope.editora = _editora.data;
             $scope.Id = _editora.Id;
             $scope.Nome = _editora.Nome;
-            $scope.Descricao = _editora.Descricao;
+            $scope.DtInc = _editora.DtInc;
+            $scope.DtAlt = _editora.DtAlt;
             $scope.Action = "Atualizar";
             $scope.divEditora = true;
         }, function () {
@@ -69,9 +71,12 @@
         $scope.divEditora = true;
     }
     function LimpaCampos() {
-        $scope.Id = "";
-        $scope.Nome = "";
-        $scope.Descricao = "";
+        if ($scope.editora) {
+            $scope.editora.Id = "";
+            $scope.editora.Nome = "";
+            $scope.editora.DtInc = "";
+            $scope.editora.DtAlt = "";
+        }
     }
     function ListarTodos() {
 
