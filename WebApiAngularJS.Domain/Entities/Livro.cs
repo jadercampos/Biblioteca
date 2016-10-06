@@ -4,7 +4,7 @@ using WebApiAngularJS.Domain.Enums;
 
 namespace WebApiAngularJS.Domain.Entities
 {
-    [Table("Estabelecimento")]
+    [Table("Livro")]
     public class Livro: DbEntity
     {
         [ScaffoldColumn(false)]
@@ -17,12 +17,12 @@ namespace WebApiAngularJS.Domain.Entities
         public string Autor { get; set; }
         //Utilizando enum para controle de domínios de propriedades
 
-        public Idioma Idiomas { get; set; }
+        public string Idioma { get; set; }
 
         public int Paginas { get; set; }
 
         //Utilizando enum para controle de domínios de propriedades
-        public Capa Capa { get; set; }
+        public string Capa { get; set; }
 
         //Estabelece relcaionamento com a tabela de editoras
         public virtual Editora Editora { get; set; }

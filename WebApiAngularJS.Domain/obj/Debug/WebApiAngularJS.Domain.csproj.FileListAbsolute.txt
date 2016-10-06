@@ -21,4 +21,3 @@ C:\Users\jader\Downloads\WebApi-AngularJS\WebApiAngularJS.Domain\bin\Debug\Entit
 C:\Users\jader\Downloads\WebApi-AngularJS\WebApiAngularJS.Domain\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\jader\Downloads\WebApi-AngularJS\WebApiAngularJS.Domain\obj\Debug\WebApiAngularJS.Domain.dll
 C:\Users\jader\Downloads\WebApi-AngularJS\WebApiAngularJS.Domain\obj\Debug\WebApiAngularJS.Domain.pdb
-C:\Users\jader\Downloads\WebApi-AngularJS\WebApiAngularJS.Domain\obj\Debug\WebApiAngularJS.Domain.csprojResolveAssemblyReference.cache

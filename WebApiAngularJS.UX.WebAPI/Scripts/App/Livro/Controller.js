@@ -3,12 +3,15 @@
 
     ListarTodos();
     ListarIdiomas();
+    ListarCapas();
     $scope.Salvar = function () {
         debugger;
         var livro = {
             Id: $scope.livro.Id,
             Nome: $scope.livro.Nome,
-            Idioma: $scope.livro.Idioma
+            Idioma: $scope.livro.Idioma,
+            Capa: $scope.livro.Capa,
+            Paginas: $scope.livro.Paginas
         };
         $scope.divLivro = true;
         if ($scope.Action == "Atualizar") {
@@ -42,7 +45,9 @@
             $scope.livro = _livro.data;
             $scope.Id = _livro.Id;
             $scope.Nome = _livro.Nome;
-            $scope.Descricao = _livro.Descricao;
+            $scope.Idioma = _livro.Idioma;
+            $scope.Capa = _livro.Capa;
+            $scope.Paginas = _livro.Paginas;
             $scope.Action = "Atualizar";
             $scope.divLivro = true;
         }, function () {
@@ -71,7 +76,9 @@
     function LimpaCampos() {
         $scope.Id = "";
         $scope.Nome = "";
-        $scope.Descricao = "";
+        //$scope.Idioma = "";
+        //$scope.Capa = "";
+        //$scope.Paginas = "";
     }
     function ListarTodos() {
 
@@ -79,7 +86,6 @@
 
         livrosData.then(function (livro) {
             $scope.livros = livro.data;
-
         }, function () {
             toastr["error"]("Erro ao obter Livros!", "WebApiAngularJS");
         });
@@ -94,6 +100,18 @@
 
         }, function () {
             toastr["error"]("Erro ao obter Idiomas!", "WebApiAngularJS");
+        });
+
+    }
+    function ListarCapas() {
+
+        var capasData = livroService.ListarCapas();
+
+        capasData.then(function (capa) {
+            $scope.capas = capa.data;
+
+        }, function () {
+            toastr["error"]("Erro ao obter Capas!", "WebApiAngularJS");
         });
 
     }

@@ -6,7 +6,7 @@ namespace WebApiAngularJS.Repositories.EF
 {
     public class AppDbContext : DbContext
     {
-        public AppDbContext(): base("JaderCamposBiblioteca") 
+        public AppDbContext(): base("Biblioteca") 
         { 
         
         }
