@@ -11,6 +11,7 @@
             <thead>
                 <tr>
                     <th>Id</th>
+                    <th>Editora</th>
                     <th>Nome</th>
                     <th>Idioma</th>
                     <th>Capa</th>
@@ -20,8 +21,8 @@
             </thead>
             <tbody>
                 <tr ng-repeat="livro in livros">
-                   
                     <td>{{livro.Id}}</td>
+                    <td>{{livro.Editora.Nome}}</td>
                     <td>{{livro.Nome}}</td>
                     <td>{{livro.Idioma}}</td>
                     <td>{{livro.Capa}}</td>
